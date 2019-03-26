@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ListaContactos</string>
+    <string name="texto_txtv_lista">Ir Lista</string>
+    <string name="texto_txtv_spinning">Ir Spinning</string>
+    <string name="texto_txtv_gridview">Ir GridView</string>
+
+    <string-array name="datos">
+        <item>Jesus Fadul</item>
+        <item>Rolando</item>
+        <item>Alejandro</item>
+        <item>Armando</item>
+        <item>Edgar</item>
+        <item>Luis</item>
+    </string-array>
+</resources>
