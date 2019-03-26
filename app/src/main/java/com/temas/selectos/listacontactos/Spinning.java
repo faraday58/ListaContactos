@@ -25,13 +25,19 @@ public class Spinning extends AppCompatActivity {
         ArrayAdapter <String> adapatadorSpinner = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,mDatos);
         mSpinner.setAdapter(adapatadorSpinner);
 
-        mSpinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        mSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String usuarioSeleccionado="Mensaje enviado a :" + mDatos[position];
-                Toast.makeText(getApplicationContext(), usuarioSeleccionado, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),usuarioSeleccionado,Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
 
             }
         });
+
+
     }
 }
